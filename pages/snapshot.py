@@ -286,11 +286,11 @@ class Snapshot(object):
             st.write(" * Select Screener: ")
             screener = st.selectbox("", l0.snapshot_screeners_list)
             if st.button("Source Screeners"):
-                data = self.get_screener_display(screener)
+                self.get_screener_display(screener)
                 # path1 = Path(f"data/screeners/{screener}.csv")
                 # if exists(path1):
                 #     data = pd.read_csv(path1)
-                st.dataframe(data)
+                # st.dataframe(data)
 
         st.header("Multivariate")
         with st.expander("", expanded=True):
