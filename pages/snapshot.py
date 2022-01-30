@@ -53,21 +53,21 @@ class Snapshot(object):
 
 
     def get_screener_display(self, screener):
-        if screener == "Day_Gainer_Stocks":
+        if screener == "Day_Gainer":
             try:
                 st.write("** Today's Gainers **")
                 st.dataframe(si.get_day_gainers().round(2).set_index(["Name", "Symbol"]))
             except Exception:
                 pass
 
-        elif screener == "Day_Loser_Stocks":
+        elif screener == "Day_Loser":
             try:
                 st.write("** Today's Losers **")
                 st.dataframe(si.get_day_losers().round(2).set_index(["Name", "Symbol"]))
             except Exception:
                 pass
 
-        elif screener == "Most_Active_Stocks":
+        elif screener == "Most_Active":
             try:
                 st.write("** Today's Most Active **")
                 st.dataframe(
@@ -85,7 +85,7 @@ class Snapshot(object):
             except Exception:
                 pass
 
-        elif screener == "Most_Shorted_Stocks":
+        elif screener == "Most_Shorted":
             try:
                 st.write("** Today's Most Shorted Stocks **")
                 st.dataframe(
@@ -94,7 +94,7 @@ class Snapshot(object):
             except Exception:
                 pass
 
-        elif screener == "Undervalued_Large_Cap_Stocks":
+        elif screener == "Undervalued_Large_Cap":
             try:
                 st.write("** Undervalued Large Cap Stocks **")
                 st.dataframe(
@@ -105,7 +105,7 @@ class Snapshot(object):
             except Exception:
                 pass
 
-        elif screener == "Undervalued_Growth_Stocks":
+        elif screener == "Undervalued_Growth":
             try:
                 st.write("** Undervalued Growth Stocks **")
                 st.dataframe(
@@ -116,7 +116,7 @@ class Snapshot(object):
             except Exception:
                 pass
 
-        elif screener == "Growth_Technology_Stocks":
+        elif screener == "Growth_Technology":
             try:
                 st.write("** Growth Technology Stocks **")
                 st.dataframe(
@@ -127,7 +127,7 @@ class Snapshot(object):
             except Exception:
                 pass
 
-        elif screener == "Aggressive_Small_Cap_Stocks":
+        elif screener == "Aggressive_Small_Cap":
             try:
                 st.write("** Aggressive Small Cap Stocks **")
                 st.dataframe(
@@ -138,7 +138,7 @@ class Snapshot(object):
             except Exception:
                 pass
 
-        elif screener == "Small_Cap_Gainer_Stocks":
+        elif screener == "Small_Cap_Gainer":
             try:
                 st.write("** Small Cap Gainer Stocks **")
                 st.dataframe(
