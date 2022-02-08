@@ -1,7 +1,7 @@
 backtrader==1.9.76.123
 cufflinks
-fbprophet==0.7.1
-# finviz==1.4.3
+# fbprophet==0.7.1
+finviz==1.4.3
 finvizfinance==0.11.1
 ipython==7.31.1
 matplotlib==3.5.1
